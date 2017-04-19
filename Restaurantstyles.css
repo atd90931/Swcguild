@@ -7,3 +7,20 @@
 	font-style:italic;
 	text-align:center;
 }
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
