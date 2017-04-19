@@ -3,6 +3,15 @@
 	<head>
 	<link rel="stylesheet" type="text/css" href="albumstyles.css">
 
+<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
 	<link href="https://fonts.googleapis.com/css?family=Kumar+One" rel="stylesheet">
 
 		<title>WWAlbum</title>
@@ -31,11 +40,17 @@
 			.track-info {
 				font-style: italic;
 			}
+			.content {
+				background-color: yellow;
+			}
+			.img-circle {
+    			border-radius: 50%;
+			}
 		</style>
 	</head>
-	<body>
+	<body class="content">
 		<div class="background-image">
-			<img src="WWAlbum.jpg" alt="Album cover">
+			<img class='img-circle' src="WWAlbum.jpg" alt="Album cover">
 		</div>
 		<div class="band-info">
 			<h1 style="color: brown;">Willie and Waylon</h1>
@@ -57,7 +72,7 @@
 			</ul>
 		</div>
 		<center><h2>Tracks</h2></center>
-		<table border="1" width="100%">
+		<table class="table table-responsive table-striped" border="1" width="100%">
 		<tr style="background-color: grey">
 			<th>Track #</th>
 			<th>Track Title</th>
@@ -78,6 +93,6 @@
 			<td>Pick Up The Tempo</td>
 			<td>2:34</td>
 		</tr>
-
+		</table>
 	</body>
 </html>
